@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap');
+
+:root {
+  --xmas-red: #8b0000;   
+  --xmas-green: #1b4d3e; 
+  --xmas-gold: #d4af37;  
+  --xmas-white: #f8f5f2; 
+}
+
+.christmas-header {
+  background-color: var(--xmas-red);
+  border-bottom: 4px solid var(--xmas-gold);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: var(--xmas-white);
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: opacity 0.3s;
+}
+
+.brand-link:hover {
+  opacity: 0.9;
+}
+
+.brand-gold {
+  color: var(--xmas-gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--xmas-white);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  border-color: var(--xmas-gold);
+  background-color: rgba(212, 175, 55, 0.1); 
+  color: var(--xmas-gold);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+  }
+
+  .nav-item {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    background-color: rgba(0,0,0,0.1); 
+  }
+}

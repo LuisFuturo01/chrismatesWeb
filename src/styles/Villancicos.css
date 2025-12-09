@@ -1,0 +1,59 @@
+/* src/styles/CarolsPage.css */
+
+.carols-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.carols-title {
+  font-family: 'Cinzel', serif;
+  color: var(--xmas-red, #8b0000);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  border-bottom: 2px solid var(--xmas-gold, #d4af37);
+  display: inline-block;
+  padding-bottom: 10px;
+  /* Truco para centrar el borde */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Contenedor de las tarjetas estáticas */
+.carols-layout-static {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.carol-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-top: 4px solid var(--xmas-green, #1b4d3e);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.carol-card:hover {
+  transform: translateY(-5px);
+}
+
+.carol-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--xmas-green, #1b4d3e);
+  margin-bottom: 20px;
+}
+
+.carol-card p {
+  font-family: 'Playfair Display', serif; /* Fuente más legible y poética */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  font-style: italic;
+  white-space: pre-wrap; /* Respeta los saltos de línea del texto */
+}

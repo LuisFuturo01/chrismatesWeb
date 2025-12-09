@@ -1,0 +1,102 @@
+/* src/styles/Inicio.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cinzel:wght@700&display=swap');
+
+:root {
+  --xmas-red: #8b0000;
+  --xmas-green: #1b4d3e;
+  --xmas-gold: #d4af37;
+  --bg-cream: #f8f5f2;
+}
+
+.home-container {
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+  /* Fondo sutilmente texturizado o color crema limpio */
+  background-color: var(--bg-cream);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-section {
+  margin-bottom: 60px;
+}
+
+.welcome-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--xmas-red);
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.welcome-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Caja de la Fecha Estilo Tarjeta */
+.countdown-container {
+  background-color: white;
+  padding: 40px 60px;
+  border: 1px solid var(--xmas-gold);
+  /* Doble borde para efecto elegante */
+  outline: 4px solid white; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05); 
+  display: inline-block;
+  position: relative;
+}
+
+/* Adorno superior (simulado con borde) */
+.countdown-container::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: -10px; right: -10px; bottom: -10px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  z-index: -1;
+}
+
+.countdown-title {
+  font-family: 'Cinzel', serif;
+  color: var(--xmas-green);
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.timer-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--xmas-red);
+  line-height: 1;
+}
+
+.timer-label {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--xmas-gold);
+  margin-top: 10px;
+  text-transform: uppercase;
+}
