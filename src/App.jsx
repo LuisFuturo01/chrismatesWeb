@@ -16,7 +16,7 @@ function App() {
       <Header />
       <main className="main-content">
         <Routes>
-          <Route path="/chrismatesWeb" element={<InicioPage />} />
+          <Route path="/chrismatesweb" element={<InicioPage />} />
           <Route path="/regalos" element={<RegalosPage />} />
           <Route path="/villancicos" element={<VillancicosPage />} />
         </Routes>
